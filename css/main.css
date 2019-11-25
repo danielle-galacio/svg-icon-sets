@@ -14,12 +14,32 @@ a {
 
 .btn-ghost {
   color: #fff;
-  border: 2px solid #fff;
+  border: 3px solid;
   border-radius: 4px;
 }
 
-.btn-ghost:hover {
+.btn:hover {
   background-color: #fff;
-  border-color: #fff;
+  border-color: rgba(255, 255, 255, 1);
   color: #ff5e3a;
+}
+
+.borderbottom {
+  border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+
+.borderright {
+  border-right: 1px solid #fff;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .borderbottom {
+    border-bottom: 0px solid rgba(255, 255, 255, 1);
+  }
+
+  .borderright {
+    border-right: 3px solid rgba(255, 255, 255, 1);
+  }
+
 }
