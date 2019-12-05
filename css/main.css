@@ -14,32 +14,40 @@ a {
 
 .btn-ghost {
   color: #fff;
-  border: 3px solid;
+  border: 3px solid rgba(255, 255, 255, .5);
   border-radius: 4px;
+  padding: 6px;
 }
 
 .btn:hover {
   background-color: #fff;
-  border-color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, .5);
   color: #ff5e3a;
 }
 
-.borderbottom {
-  border-bottom: 3px solid rgba(255, 255, 255, 1);
+li {
+  border-bottom: 3px solid rgba(255, 255, 255, .5);
 }
 
-.borderright {
-  border-right: 1px solid #fff;
+@media only screen and (min-width: 38em) {
+
+  ul {
+    padding-left: 2.6rem;
+    padding-right: 2.6rem;
+  }
+
+  li {
+    padding-left: 2.6rem;
+    padding-right: 2.6rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
-  .borderbottom {
-    border-bottom: 0px solid rgba(255, 255, 255, 1);
-  }
-
-  .borderright {
-    border-right: 3px solid rgba(255, 255, 255, 1);
+  li {
+    border-bottom: 0;
+    border-right: 3px solid #fff;
   }
 
 }
